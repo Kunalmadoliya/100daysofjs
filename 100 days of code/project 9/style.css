@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter {
+  color: rgb(54, 139, 243);
+}
+
+.google {
+ 
+  color: rgb(255, 128, 0);
+}
+
+.btn1 i {
+  padding-right: 10px;
+}
+
+
+/* <------------header----------------> */
+
+.registration-form {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  text-align: center;
+  display: flex;
+}
+
+.btn {
+  text-transform: capitalize;
+  border: none;
+  border-top: 2px solid rgb(224, 211, 211);
+  border-left: 2px solid rgb(224, 211, 211);
+  border-right: 2px solid rgb(224, 211, 211);
+  font-size: larger;
+  text-align: center;
+  width: 250px;
+  height: 80px;
+  font-weight: 600;
+}
+
+.btn.active{
+  background: white;
+}
+
+
+
+
+/* <-----------------main-------------> */
+
+.main {
+  text-align: center;
+}
+
+
+
+.heading {
+  padding: 30px;
+}
+
+.para {
+  padding-bottom: 20px;
+}
+
+.btn1 {
+  width: 170px;
+  height: 45px;
+  margin: 10px 0px 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: white;
+  outline: none;
+  border: 0.5px solid grey;
+  color: rgb(131, 115, 115);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* <-------------footer------------> */
+
+.insert{
+
+  position: relative;
+}
+
+
+.input{
+  text-transform: capitalize;
+  padding: 0px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1.2px solid grey;
+  height: 40px;
+  width: 100%;
+}
+
+.name{
+  
+   padding:   0px 20px;
+   
+}
+
+.password{
+
+  padding:  20px 20px;
+}
+.email{
+
+  padding:  0px 20px 20px ;
+}
+
+.button{
+  padding:   20px 20px;
+  cursor: pointer;
+}
+
+.btn2{
+  background-color: rgba(0, 187, 255, 0.866);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3rem;
+
+
+}
+
+.footer{
+  padding-bottom: 20px;
+}
+
+.footer p{
+
+  color: rgb(99, 178, 243);
+}
+
+
+/* <--------js---------> */
+.content{
+
+  display: none;
+}
+
+.content.active{
+
+  display: block;
+}

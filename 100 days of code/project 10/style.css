@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  .navbar {
+    border: 1px solid gray;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    position: relative;
+    background-color: rgb(246, 245, 243);
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: default;
+  }
+  
+  .ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .list-items {
+    padding: 10px;
+    text-transform: capitalize;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .list-items:hover {
+    color: black;
+  }
+  
+  .list-items.active {
+    color: black;
+  }
+  
+  #underline {
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background-color: #333;
+    width: 65px;
+    border-radius: 5px 5px 0 0;
+    transition: 0.3s;
+  }
+  
+  #nav-toggler,
+  .nav-toggler-label {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #underline {
+      display: none;
+    }
+    .navbar{
+
+      position: relative;
+    }
+    .logo{
+      position: absolute;
+      left: 50px;
+    }
+    .nav-toggler-label {
+      display: block;
+      position: absolute;
+      right: 50px;
+      cursor: pointer; /* Added cursor for clarity */
+    }
+    
+    .list-container {
+      position: absolute;
+      top: 70px;
+      width: 100%;
+      left: 0px;
+      background-color: #fafbfd;
+      line-height: 40px;
+      transform: scale(1, 0);
+      transform-origin: top;
+      transition: transform 0.3s;
+      z-index: 1000; /* Ensure it appears on top */
+    }
+  
+    .nav-toggler:checked ~ .list-container {
+      transform: scale(1, 1);
+    }
+  
+    .ul {
+      display: block;
+      width: 100%;
+      padding: 0; /* Added for consistency */
+    }
+  
+    .ul .list-items {
+      display: block;
+      padding-left: 1rem;
+      width: 100%;
+    }
+  }
+  

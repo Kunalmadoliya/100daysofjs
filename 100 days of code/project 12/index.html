@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="status">
+            <h1>no-status</h1>
+            <div class="todo-input">
+                <button class="btn">+ add todo</button>
+                <div class="todo-box" draggable="true">
+                    Study!
+                    <span class="cross">&times;</span>
+                </div>
+            </div>
+        </div>
+        <div class="status">
+            <h1>not-started</h1>
+        </div>
+        <div class="status">
+            <h1>in-progress</h1>
+        </div>
+        <div class="status">
+            <h1>completed</h1>
+        </div>
+    </div>
+    <div class="box">
+        <p>add todo <i class="fa fa-close close"></i></p>
+        <div class="box2">
+            <input type="text" class="input">
+            <div class="btn1">
+                <button class="btn2">add todo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

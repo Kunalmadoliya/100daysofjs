@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Noto Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    width: 1000px;
+    height: 80vh;
+    display: flex;
+
+}
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    display: none;
+    background-color: rgba(237, 231, 221, 0.9); /* slightly transparent */
+    z-index: 0;
+    transition: background-color 0.3s ease; /* added transition */
+}
+
+.overlay.active {
+    display: block;
+    background-color: rgba(143, 142, 140, 0.5); /* more transparent when active */
+}
+
+.status {
+    width: 25%;
+    background-color: #f3f3f3;
+    position: relative;
+    padding: 60px 1rem 0.5rem;
+    text-transform: capitalize;
+    
+  }
+  
+  .status:nth-child(even) {
+    background-color: #e9e9e96b;
+  }
+  
+  .status h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #343434;
+    color: #f3f3f3;
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .btn{
+    width: 13vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(220, 217, 217);
+    border: 0.5px solid black;
+    outline: none;
+    
+  }
+ 
+  .box{
+    height: 150px;
+    border: 2px solid black;
+    width: 400px;
+    position: absolute;
+    top: -150px;
+    transition: .3s;
+    z-index: 1;
+    background-color: white;
+    border-radius: 10px;
+   
+  }
+  .todo-box{
+    width: 13vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgb(220, 217, 217);
+    border: 0.5px solid black;
+    outline: none;
+    margin-top: 15px;
+    background-color: white;
+    overflow: auto;
+  }
+  
+ 
+
+  .box.active{
+    top: 20px;
+   
+  }
+ 
+.box p{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-transform: capitalize;
+    background-color: #e1dddd;
+    color: rgb(12, 12, 12);
+    border-radius: 10px 10px 0px 0px;
+
+}
+.close{
+    cursor: pointer;
+}
+.box2{
+    text-align: center;
+    padding: 20px;
+}
+
+.box2 input{
+    width: 100%;
+    height: 30px;
+}
+
+.btn1{
+    padding: 10px 0px;
+    width: 100%;
+   
+}
+
+.btn1 button{
+    width: 100%;
+    height: 30px;
+    text-transform: capitalize;
+    background-color: rgb(16, 227, 62);
+}
+
+.cross{
+ color: #e1dddd;
+ cursor: pointer;
+
+}

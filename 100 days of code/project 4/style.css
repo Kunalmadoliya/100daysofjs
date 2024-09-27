@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.carousel{
+
+    position: relative;
+    overflow: hidden;
+   
+}
+
+
+.slides-container {
+    display: flex;
+    width: 479px;
+    height: 479px;
+    
+  }
+  
+  .slide img {
+    width: 479px;
+    height: 479px;
+  }
+
+  #nextBtn,
+  #prevBtn {
+    position: absolute;
+    top: 50%;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  #nextBtn {
+    right: 0;
+  }
